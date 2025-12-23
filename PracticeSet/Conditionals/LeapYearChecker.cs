@@ -12,7 +12,7 @@ namespace PracticeQuestions
         /// True if year is leap year
         /// False if year is not leap year
         /// </returns>
-        public static bool IsLeapYear(int year)
+        public bool IsLeapYear(int year)
         {
             
             if (year % 4 == 0 )

@@ -33,7 +33,8 @@ namespace PracticeQuestions
             else if(month == 4 || month == 6 || month == 9 || month == 11) maxDays = 30;
             else if (month == 2)
             {
-                maxDays = LeapYearChecker.IsLeapYear(year) ? 29 : 28;
+                LeapYearChecker LeapYear = new LeapYearChecker();
+                maxDays = LeapYear.IsLeapYear(year) ? 29 : 28;
             }
 
             if (day < 1 || day > maxDays)
