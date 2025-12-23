@@ -18,60 +18,65 @@ namespace PracticeQuestions
         {
             playerA = playerA.ToLower();
             playerB = playerB.ToLower();
+
             if(playerA == "exit" || playerB == "exit")
             {
                 Console.WriteLine("Game has beeen terminated.");
                 return;
             }
 
+            string GameRemarks = "";
+
             if (playerA == playerB)
             {
-                Console.Write("Tie ! Play Again");
-                Play();
-
+                GameRemarks = "Tie ! Play Again";
             } 
             else if (playerA == "rock")
             {
                 if (playerB == "paper")
                 {
-                    Console.Write("Result : player B Wins");
+                    GameRemarks = "Result : player B Wins";
                 }else if (playerB == "scissors")
                 {
-                    Console.Write("Result : player A Wins");
+                     GameRemarks = "Result : player A Wins";
                 } else
                 {
-                    Console.Write("Invalid Input!");
-                    Play();
+                    GameRemarks = "Invalid Input!";
                 }
             } 
             else if (playerA == "paper")
             {
                 if (playerB == "rock")
                 {
-                    Console.Write("Result : player A Wins");
+                    GameRemarks = "Result : player A Wins";
                 }else if (playerB == "scissors")
                 {
-                    Console.Write("Result : player B Wins");
+                    GameRemarks = "Result : player B Wins";
                 } else
                 {
-                    Console.Write("Invalid Input!");
-                    Play();
+                    GameRemarks = "Invalid Input!";
+                    
                 }
             }
             else if (playerA == "scissors")
             {
                 if (playerB == "paper")
                 {
-                    Console.Write("Result : player A Wins");
+                    GameRemarks = "Result : player A Wins";
                 }else if (playerB == "rock")
                 {
-                    Console.Write("Result : player B Wins");
+                    GameRemarks = "Result : player B Wins";
                 } else
                 {
-                    Console.Write("Invalid Input!");
+                    GameRemarks = "Invalid Input!";
                     Play();
                 }
             }
+
+            Console.WriteLine(GameRemarks);
+            Console.WriteLine("Enter exit anytime to exit the game");
+            Play();
+
         }
     }
 }
