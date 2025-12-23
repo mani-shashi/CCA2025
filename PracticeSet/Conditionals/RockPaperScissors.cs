@@ -14,6 +14,12 @@ namespace PracticeQuestions
             Console.WriteLine("Enter exit anytime to exit the game");
         }
 
+        /// <summary>
+        /// Method to find winner of the Rock paper scissor game
+        /// </summary>
+        /// <param name="playerA">Player A input as String</param>
+        /// <param name="playerB">Player B input as String</param>
+
         public void GetWinner(string playerA , string playerB)
         {
             playerA = playerA.ToLower();
@@ -24,6 +30,7 @@ namespace PracticeQuestions
                 Console.WriteLine("Game has beeen terminated.");
                 return;
             }
+            //To trminate the game anytime 
 
             string GameRemarks = "";
 

@@ -87,6 +87,9 @@ RockPaperScissors rps = new RockPaperScissors();
 rps.Play();
 
 
+ProfitLossChecker pl = new ProfitLossChecker();
+Console.WriteLine($" Profit or loss : {pl.GetProfitOrLoss(219,432.67)}");
+
 ContinueExample ce = new ContinueExample();
 ce.printMultiples();
 
