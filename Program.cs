@@ -83,7 +83,8 @@ FibonacciSequencePrinter FS  = new FibonacciSequencePrinter();
 FS.printFibonacciSequence(7);
 
 
-
+RockPaperScissors rps = new RockPaperScissors();
+rps.Play();
 
 
 ContinueExample ce = new ContinueExample();
