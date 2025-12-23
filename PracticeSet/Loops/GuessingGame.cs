@@ -4,6 +4,10 @@ namespace PracticeQuestions
 {
     public class GuessingGame
     {
+        /// <summary>
+        /// Method to play the Guessing Game using do-while loop
+        /// 
+        /// </summary>
         public void Play()
         {
             int secretNumber=98;

@@ -79,5 +79,15 @@ PalindromeChecker pa = new PalindromeChecker();
 num = 123;
 Console.WriteLine($"{num} is palindrome? {pa.IsPalindrome(num)}");
 
+FibonacciSequencePrinter FS  = new FibonacciSequencePrinter();
+FS.printFibonacciSequence(7);
+
+
+
+
+
+ContinueExample ce = new ContinueExample();
+ce.printMultiples();
+
 GuessingGame gg = new GuessingGame();
 gg.Play();
