@@ -74,3 +74,10 @@ Console.WriteLine($"Digital Root of {num} : {D.findDigitalRoot(num)}");
 BinaryConverter Bin = new BinaryConverter();
 string binary = "1011";
 Console.WriteLine($"Binary{binary} to Decimal: {Bin.ToDecimal(binary)}");
+
+PalindromeChecker pa = new PalindromeChecker();
+num = 123;
+Console.WriteLine($"{num} is palindrome? {pa.IsPalindrome(num)}");
+
+GuessingGame gg = new GuessingGame();
+gg.Play();
